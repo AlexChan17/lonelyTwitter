@@ -44,6 +44,35 @@ public class LonelyTwitterActivity extends Activity {
 
 			}
 		});
+
+		Tweet firstTweet = new importantTweet();
+
+		//System.out.println("print message");
+
+		//Log.i("the message", temp);
+
+		String temp = firstTweet.getMessage();
+
+		System.out.println(temp);
+
+
+		Tweet secondtweet = new importantTweet();
+
+		secondtweet.setMessage("second tweet");
+
+		temp = secondtweet.getMessage();
+
+		System.out.println(temp);
+
+		Tweet thirdTweet = new importantTweet();
+
+		thirdTweet.setMessage("firstmessage", "second message");
+
+		importantTweet fourthMessage = new importantTweet();
+
+		fourthMessage.setMessage("hello", "world");
+
+		System.out.println(fourthMessage.getMessage());
 	}
 
 	@Override
